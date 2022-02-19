@@ -1,0 +1,6 @@
+[config]
+
+name="GodotAndroidNotifications"
+binary_type="local"
+binary="GodotAndroidNotifications.1.0.0.release.aar"
+
