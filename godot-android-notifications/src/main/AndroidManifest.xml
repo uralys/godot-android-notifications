@@ -2,11 +2,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.godotengine.godot.plugin.androidnotifications">
 
-  <application>
+  <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
+  <application>
     <meta-data
         android:name="org.godotengine.plugin.v1.GodotAndroidNotifications"
-        android:value="org.godotengine.godot.plugin.androidnotifications.GodotAndroidNotifications" />
+        android:value="org.godotengine.godot.plugin.androidnotifications.Scheduler" />
 
+    <receiver
+        android:name="org.godotengine.godot.plugin.androidnotifications.Notifier"
+        android:process=":remote" />
   </application>
+
+
 </manifest>

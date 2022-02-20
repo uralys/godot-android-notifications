@@ -1,5 +1,5 @@
 # godot versioned lib
-libs/godot-lib*
+libs/
 
 # Built application files
 *.apk
@@ -12,6 +12,9 @@ libs/godot-lib*
 
 # Java class files
 *.class
+
+# OSX
+*.DS_Store
 
 # Generated files
 bin/
