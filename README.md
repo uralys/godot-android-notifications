@@ -35,7 +35,43 @@ Copy this `.aar` and `GodotAndroidNotifications.gdap` in your godot project, int
 android/plugins/.
 ```
 
+You should get something like:
+
+```
+android/plugins
+├── GodotAndroidNotifications.1.0.0.release.aar
+├── GodotAndroidNotifications.gdap
+```
+
 Now export your Godot project using the [custom build](https://docs.godotengine.org/en/stable/tutorials/export/android_custom_build.html)
+
+## API
+
+You have [2 functions](https://github.com/uralys/godot-android-notifications/blob/master/godot-android-notifications/src/main/java/org/godotengine/godot/plugin/androidnotifications/Scheduler.java#L111) available on godot side
+
+## schedule
+
+```
+ var notifier = Engine.get_singleton('GodotAndroidNotifications')
+ 
+ var notificationId = 'whatever, I use time stuff to get unique ids'
+
+ notifier.schedule(
+        'the title',
+        'the message',
+        secsToNextNotification,
+        notificationId
+)
+```
+
+## cancel
+
+You can store your `notificationId` anywhere, and use it to cancel the scheduling:
+
+```
+notifier.cancel(notificationId)
+```
+
 
 ## Development
 
