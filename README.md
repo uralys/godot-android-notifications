@@ -1,6 +1,9 @@
+This plugin worked for Godot 3, using the old plugin API and is now archived.
+For Godot 4 use this one: <https://github.com/cengiz-pz/godot-android-notification-scheduler-plugin>
+
 # godot-android-notifications
 
-Godot Android plugin to send Android notifications
+An Android plugin for Godot 3 to send Android notifications
 
 This plugin implements <https://developer.android.com/guide/topics/ui/notifiers/notifications> for Godot Engine.
 
